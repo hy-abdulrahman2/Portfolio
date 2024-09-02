@@ -1,0 +1,77 @@
+@import url('./fonts.css');
+@import url('./output.css');
+@import url('./bg_anime_boxes.css');
+@import url('./scrollbar.css');
+@import url('./tooltip.css');
+@import url('./../assets/fontawesome/css/all.css');
+@import url('./../assets/fontawesome/css/all.min.css');
+
+
+:root {
+    --primary: #A23C43;
+    --dark-primary: #85292f;
+    --orange:#eb8d21c5;
+    --secondry: #40e2c4da;
+    --light: #fdfdfdda;
+}
+::selection{
+    color: var(--light);
+    background: var(--primary);
+}
+
+
+
+*{padding: 0;margin: 0;}
+
+     
+body{
+    overflow-x: hidden;background: #ffdd9e71;
+}
+
+/* main bg  */
+.bg{
+    background: #8a45c4;
+    background-image: url('./../assets/images/we-dev-backgroud-img.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+.menu-icon:hover .fa-burger,
+.menu-icon:hover .fa-xmark{
+transform: scale(1.2);
+transition: transform 0.5s linear;
+}
+/* sidebar animtion  */
+header {
+    transition: position 2s linear;
+}
+ .transition {
+    transition: all 1s linear;
+ }
+
+ .pr--text{
+    color: var(--dark-primary);
+ }
+ .underline{
+    text-decoration: underline;
+ }
+ .pr--bg{
+    background: linear-gradient(var(--dark-primary), var(--primary));
+ }
+ section .container div .p,
+ section .container div p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+ }
+
+ section .link-btn a {
+    color: var(--light);
+ }
+
+ .flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
