@@ -51,7 +51,7 @@
 
         </nav>
         <div id="navBox"
-            class="full-container absolute w-full md:w-[60%] h-screen bg-[#ffffff6c] backdrop-blur-[10px] px-12 py-16 top-0 -right-[100%] md:-right-[61%] flex flex-col gap-[3rem] items-start text-7xl font-medium font-Kajiro">
+            class="full-container absolute w-full md:w-[60%] h-screen bg-[#ffffff6c] backdrop-blur-[10px] px-12 py-16 top-0 -right-[100%] md:-right-[61%] hidden md:flex flex-col gap-[3rem] items-start text-7xl font-medium font-Kajiro">
             <h4 class="hover:underline"> <a href="#home"> Home</a></h4>
             <h4 class="hover:underline"> <a href="#about"> About</a></h4>
             <h4 class="hover:underline"> <a href="#projects"> Project</a></h4>
@@ -102,8 +102,8 @@
 
                 </div>
                 <div
-                    class="col-span-1 bg-sky-6 h-1/2 absolute scale-[2.1] -right-20  img -translate-y-5 -translate-x-24 z-[-2]">
-                    <img src="./src/assets/images/avatar-2.png" class="img select-none w-full h-full" alt="avatar-2">
+                    class="col-span-1 bg-sky-6 h-1/2 absolute md:scale-[2.1] -right-20  img -translate-y-5 -translate-x-24 z-[-2]">
+                    <img src="./src/assets/images/avatar-2.png" class="img select-none md:w-full h-full" alt="avatar-2">
 
                 </div>
             </div>
@@ -358,7 +358,56 @@
             class="container mx-auto mt-12 h-full justify-center items-center z-[100] backdrop-blur-lg bg-[#fffffe59] flex flex-col overflow-hidden p-4 md:p-12 gap-6"> 
             
             <h2 class="flex font-urdu pr--text text-[2rem] font-bold">Contact us</h2>
+            <div class="grid md:grid-cols-[1fr_,_1fr_,_2px_,_1fr_,_1fr] md:grid-rows-1 grid-rows-[_1fr_,_2px_,_1fr_]">
 
+                <!-- <form
+                class="col-span-2 w-full"
+                action="https://formspree.io/f/xnnarqqa"
+                method="POST"
+              > -->
+                <form
+                class="col-span-2 w-full"
+              >
+                <label>
+                  Email:
+                  <input type="email" name="email" class="focus:outline-none placeholder:text-gray-400 text-black p-2 font-medium" placeholder="Enter your email  . . ."  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required>
+                </label>
+                <label>
+                  Message:
+                  <textarea name="message" class="focus:outline-none placeholder:text-gray-400 text-black p-2 font-medium" placeholder="Enter your message . . . "  required></textarea>
+                </label>
+                <div class="flex w-full justify-end">
+
+                    <button type="submit">Send</button>
+                </div>
+              </form>
+
+              <!-- or -->
+              <div class="col-span-1 md:h-full w-80 md:w-auto my-4 md:my-0 md:mx-4 grid grid-rows-1 md:grid-cols-1 grid-cols-[1fr_,_20px_,1fr] md:grid-rows-[1fr_,_20px_,1fr] place-items-center">
+<div class="md:w-[1px] w-full md:h-full h-[1px] bg-black"></div>
+<span class="or">
+    or
+</span>
+<div class="md:w-[1px] w-full md:h-full h-[1px] bg-black"></div>
+              </div>
+              <!-- social btns  -->
+              <div class="btns col-span-2 flex justify-center items-end flex-col gap-4">
+
+                <a href="mailto:hy.abdulrahman2@gmail.com" class="flex w-full md:w-[90%]  justify-center items-center px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600 transition duration-300">
+                    <i class="fas fa-envelope mr-2"></i> Email
+                </a>
+        
+                <!-- GitHub Button -->
+                <a href="https://github.com/code-abdulrehman" target="_blank" class="flex w-full md:w-[90%] justify-center items-center px-4 py-2 bg-purple-800 text-white rounded-md shadow-md hover:bg-purple-900 transition duration-300">
+                    <i class="fab fa-github mr-2"></i> GitHub
+                </a>
+        
+                <!-- LinkedIn Button -->
+                <a href="https://www.linkedin.com/in/abdulrehman62" target="_blank" class="flex w-full md:w-[90%] justify-center items-center px-4 py-2 bg-sky-700 text-white rounded-md shadow-md hover:bg-sky-800 transition duration-300">
+                    <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                </a>
+              </div>
+            </div>
 
             </div>
     </section>

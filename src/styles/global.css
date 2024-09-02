@@ -10,10 +10,11 @@
 :root {
     --primary: #A23C43;
     --dark-primary: #85292f;
+    --black: #222222;
+    --light: #fdfdfdda;
     --orange:#eb8d21c5;
     --secondry: #40e2c4da;
-    --light: #fdfdfdda;
-}
+   }
 ::selection{
     color: var(--light);
     background: var(--primary);
@@ -74,4 +75,50 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+ }
+
+
+
+
+
+
+
+
+ label {
+   display: block;
+   margin-bottom: 15px;
+   color: var(--dark-primary);
+   font-weight: bold;
+ }
+
+ input[type="email"],
+ textarea {
+   font-family: "Roboto", sans-serif;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   padding: 10px;
+   margin-top: 5px;
+   border: 1px solid var(--dark-primary);
+   border-radius: 5px;
+   background-color: var(--light);
+   color: var(--black);
+   font-size: 16px;
+ }
+
+ textarea {
+   height: 100px;
+   resize: vertical;
+   max-height: 150px;
+ }
+
+ button[type="submit"] {
+   background-color: var(--dark-primary);
+   color: #fff;
+   border: none;
+   padding: 10px 15px;
+   font-size: 16px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   margin-top: 10px;
  }

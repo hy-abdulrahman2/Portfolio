@@ -1,6 +1,7 @@
 
 let menuOpen = document.querySelector("#menuOpen")
 let menuClose = document.querySelector("#menuClose")
+let navBox = document.querySelector("#navBox")
 
 var tl = gsap.timeline({ pause: false });
 
@@ -25,8 +26,20 @@ tl.from("#menuClose", {
 tl.pause()
 
 // menu actions 
-menuOpen.addEventListener('click', () => tl.play())
-menuClose.addEventListener('click', () => tl.reverse())
+menuOpen.addEventListener('click', () => {
+    tl.play()
+    navBox.classList.add("flex");
+    navBox.classList.remove("hidden");
+    
+}
+)
+menuClose.addEventListener('click', () => {
+    tl.reverse()
+    navBox.classList.add("hidden");
+    navBox.classList.remove("flex");
+    
+    })
+
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         tl.reverse();

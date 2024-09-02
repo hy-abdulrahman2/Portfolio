@@ -4,6 +4,7 @@
   "description": "This template provides a minimal setup for Tailwind CSS and GSAP without React.",
   "main": "tailwind.config.js",
   "scripts": {
+    "build": "tailwindcss -i ./src/styles/input.css -o ./dist/styles/output.css",
     "watch": "tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch",
     "lint": "eslint ."
   },
